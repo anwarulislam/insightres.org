@@ -1,76 +1,52 @@
 <?php
 header('Content-Type: application/json');
 
-define('UPLOAD_DIR', __DIR__);
-define('MAX_FILE_SIZE', 10 * 1024 * 1024);
-define('ALLOWED_EXTENSIONS', ['html', 'css', 'js', 'json', 'txt', 'png', 'jpg', 'jpeg', 'gif', 'svg', 'ico', 'woff', 'woff2', 'ttf', 'eot', 'webp']);
+$API_KEY = '2c4a92a58d6f556fa64780a7657c331b656e0aed6d0bf49e89215da9c5c42aa1';
+$MAX_SIZE = 10 * 1024 * 1024;
+$ALLOWED = ['html', 'css', 'js', 'json', 'txt', 'png', 'jpg', 'jpeg', 'gif', 'svg', 'ico', 'woff', 'woff2', 'ttf', 'eot', 'webp'];
 
-$method = $_SERVER['REQUEST_METHOD'];
-
-if ($method === 'GET') {
-    http_response_code(200);
-    echo json_encode(['status' => 'ok', 'message' => 'Upload endpoint ready']);
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    echo json_encode(['status' => 'ok', 'message' => 'Ready']);
     exit;
 }
 
-if ($method !== 'POST') {
-    http_response_code(405);
-    echo json_encode(['error' => 'Method not allowed']);
-    exit;
-}
-
-if (!isset($_SERVER['HTTP_X_API_KEY'])) {
-    http_response_code(401);
-    echo json_encode(['error' => 'Missing API key']);
-    exit;
-}
-
-$apiKey = $_SERVER['HTTP_X-API-KEY'];
-
-$expectedKey = '2c4a92a58d6f556fa64780a7657c331b656e0aed6d0bf49e89215da9c5c42aa1';
-
-if (!hash_equals($expectedKey, $apiKey)) {
+$apiKey = $_SERVER['HTTP_X_API_KEY'] ?? '';
+if (!hash_equals($API_KEY, $apiKey)) {
     http_response_code(403);
     echo json_encode(['error' => 'Invalid API key']);
     exit;
 }
 
-if (!isset($_FILES['file']) || $_FILES['file']['error'] !== UPLOAD_ERR_OK) {
+$file = $_FILES['file'] ?? null;
+if (!$file || $file['error'] !== UPLOAD_ERR_OK) {
     http_response_code(400);
-    echo json_encode(['error' => 'No file uploaded or upload error']);
+    echo json_encode(['error' => 'Upload failed']);
     exit;
 }
 
-$file = $_FILES['file'];
-
-if ($file['size'] > MAX_FILE_SIZE) {
+if ($file['size'] > $MAX_SIZE) {
     http_response_code(413);
     echo json_encode(['error' => 'File too large']);
     exit;
 }
 
-$filename = $file['name'];
-$extension = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
-
-if (!in_array($extension, ALLOWED_EXTENSIONS)) {
+$ext = strtolower(pathinfo($file['name'], PATHINFO_EXTENSION));
+if (!in_array($ext, $ALLOWED)) {
     http_response_code(415);
-    echo json_encode(['error' => 'File type not allowed']);
+    echo json_encode(['error' => 'Invalid file type']);
     exit;
 }
 
-if (preg_match('/[<>:"|?*]/', $filename)) {
+if (preg_match('/[<>:"|?*]/', $file['name'])) {
     http_response_code(400);
     echo json_encode(['error' => 'Invalid filename']);
     exit;
 }
 
-$destination = UPLOAD_DIR . '/' . $filename;
-
-if (!move_uploaded_file($file['tmp_name'], $destination)) {
+if (!move_uploaded_file($file['tmp_name'], __DIR__ . '/' . $file['name'])) {
     http_response_code(500);
-    echo json_encode(['error' => 'Failed to move file']);
+    echo json_encode(['error' => 'Save failed']);
     exit;
 }
 
-http_response_code(200);
-echo json_encode(['status' => 'success', 'message' => 'File uploaded successfully', 'filename' => $filename]);
+echo json_encode(['status' => 'success', 'filename' => $file['name']]);

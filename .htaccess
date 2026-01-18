@@ -1,0 +1,4 @@
+<Files upload.php>
+    SecFilterEngine Off
+    SecFilterScanPOST Off
+</Files>
