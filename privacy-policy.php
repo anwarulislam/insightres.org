@@ -5,108 +5,84 @@ $meta_description = 'Learn about how Insight Research collects, uses, and protec
 include 'header.php';
 ?>
 
-      <section class="page-header">
+      <!-- Privacy Policy Section -->
+      <section class="privacy-policy">
         <div class="container">
-          <h1>Privacy Policy</h1>
-          <p>Last updated: January 2024</p>
-        </div>
-      </section>
+          <div class="section-header" data-animate="fade-up">
+            <span class="section-tag">Legal</span>
+            <h2>Privacy <span class="gradient-text">Policy</span></h2>
+            <p>
+              Last updated: January 2024
+            </p>
+          </div>
 
-      <section class="privacy-content container">
-        <div class="privacy-section">
-          <h2>Information We Collect</h2>
-          <p>At Insight Research, we collect information you provide directly to us, including:</p>
-          <ul>
-            <li>Name and contact information (email, phone number)</li>
-            <li>Company information and job title</li>
-            <li>Project details and requirements</li>
-            <li>Payment information (processed securely through third-party providers)</li>
-            <li>Communication preferences</li>
-          </ul>
-        </div>
+          <div class="features-grid">
+            <div class="feature-card glass-card" data-animate="fade-up" data-delay="0">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+              </div>
+              <h3>Information We Collect</h3>
+              <p>
+                We collect information you provide directly to us including name and contact information, company details, project requirements, and payment information processed securely.
+              </p>
+            </div>
 
-        <div class="privacy-section">
-          <h2>How We Use Your Information</h2>
-          <p>We use the information we collect to:</p>
-          <ul>
-            <li>Provide and improve our services</li>
-            <li>Communicate with you about projects and inquiries</li>
-            <li>Process payments and send invoices</li>
-            <li>Send marketing communications (with your consent)</li>
-            <li>Maintain security and prevent fraud</li>
-            <li>Comply with legal obligations</li>
-          </ul>
-        </div>
+            <div class="feature-card glass-card" data-animate="fade-up" data-delay="100">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="3" />
+                  <path d="M12 1v6m0 6v6" />
+                  <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3>How We Use Your Information</h3>
+              <p>
+                We use your information to provide and improve services, communicate about projects, process payments, send marketing communications with consent, and comply with legal obligations.
+              </p>
+            </div>
 
-        <div class="privacy-section">
-          <h2>Information Sharing</h2>
-          <p>We do not sell your personal information. We may share your information with:</p>
-          <ul>
-            <li>Third-party service providers who assist in delivering our services</li>
-            <li>Payment processors for transaction processing</li>
-            <li>Legal authorities when required by law</li>
-            <li>Business partners with your explicit consent</li>
-          </ul>
-        </div>
+            <div class="feature-card glass-card" data-animate="fade-up" data-delay="200">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <h3>Information Sharing</h3>
+              <p>
+                We do not sell your personal information. We may share it with third-party service providers, payment processors, legal authorities when required, or business partners with consent.
+              </p>
+            </div>
 
-        <div class="privacy-section">
-          <h2>Data Security</h2>
-          <p>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. This includes:</p>
-          <ul>
-            <li>Secure data storage and transmission</li>
-            <li>Regular security assessments</li>
-            <li>Restricted access to personal data</li>
-            <li>Secure authentication protocols</li>
-          </ul>
-        </div>
+            <div class="feature-card glass-card" data-animate="fade-up" data-delay="300">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                  <path d="M7 11V7a5 5 0 0110 0v4" />
+                </svg>
+              </div>
+              <h3>Data Security</h3>
+              <p>
+                We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction including secure storage and authentication.
+              </p>
+            </div>
 
-        <div class="privacy-section">
-          <h2>Client Confidentiality</h2>
-          <p>All client information, project details, and communications are treated as strictly confidential. We maintain confidentiality even after our business relationship ends.</p>
-        </div>
-
-        <div class="privacy-section">
-          <h2>Your Rights</h2>
-          <p>You have the right to:</p>
-          <ul>
-            <li>Access your personal information</li>
-            <li>Correct inaccurate information</li>
-            <li>Request deletion of your information</li>
-            <li>Object to processing of your information</li>
-            <li>Withdraw consent at any time</li>
-            <li>Request data portability</li>
-          </ul>
-        </div>
-
-        <div class="privacy-section">
-          <h2>Cookies and Tracking</h2>
-          <p>We use cookies and similar technologies to improve your browsing experience, analyze website traffic, and personalize content. You can manage your cookie preferences through your browser settings.</p>
-        </div>
-
-        <div class="privacy-section">
-          <h2>Third-Party Links</h2>
-          <p>Our website may contain links to third-party websites. We are not responsible for the privacy practices of these external sites. We encourage you to review their privacy policies.</p>
-        </div>
-
-        <div class="privacy-section">
-          <h2>International Data Transfers</h2>
-          <p>Your information may be transferred to and processed in countries other than your own. We ensure appropriate safeguards are in place to protect your information in accordance with applicable data protection laws.</p>
-        </div>
-
-        <div class="privacy-section">
-          <h2>Children's Privacy</h2>
-          <p>Our services are not intended for individuals under the age of 18. We do not knowingly collect personal information from children.</p>
-        </div>
-
-        <div class="privacy-section">
-          <h2>Changes to This Policy</h2>
-          <p>We may update this privacy policy from time to time. We will notify you of any material changes by posting the new policy on our website and updating the "Last updated" date.</p>
-        </div>
-
-        <div class="privacy-section">
-          <h2>Contact Us</h2>
-          <p>If you have any questions about this privacy policy or our data practices, please contact us at:</p>
-          <p>Email: hello@insightres.org</p>
+            <div class="feature-card glass-card" data-animate="fade-up" data-delay="400">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+                </svg>
+              </div>
+              <h3>Client Confidentiality</h3>
+              <p>
+                All client information, project details, and communications are treated as strictly confidential. We maintain confidentiality even after our business relationship ends.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

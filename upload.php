@@ -3,7 +3,7 @@ header('Content-Type: application/json');
 
 $API_KEY = '2c4a92a58d6f556fa64780a7657c331b656e0aed6d0bf49e89215da9c5c42aa1';
 $MAX_SIZE = 10 * 1024 * 1024;
-$ALLOWED = ['html', 'css', 'js', 'json', 'txt', 'png', 'jpg', 'jpeg', 'gif', 'svg', 'ico', 'woff', 'woff2', 'ttf', 'eot', 'webp'];
+$ALLOWED = ['php', 'html', 'css', 'js', 'json', 'txt', 'png', 'jpg', 'jpeg', 'gif', 'svg', 'ico', 'woff', 'woff2', 'ttf', 'eot', 'webp'];
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     echo json_encode(['status' => 'ok', 'message' => 'Ready']);

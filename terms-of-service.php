@@ -5,130 +5,150 @@ $meta_description = 'Read Insight Research\'s terms of service and understand ou
 include 'header.php';
 ?>
 
-      <section class="page-header">
+      <!-- Terms of Service Section -->
+      <section class="terms-of-service">
         <div class="container">
-          <h1>Terms of Service</h1>
-          <p>Last updated: January 2024</p>
-        </div>
-      </section>
+          <div class="section-header" data-animate="fade-up">
+            <span class="section-tag">Legal</span>
+            <h2>Terms of <span class="gradient-text">Service</span></h2>
+            <p>
+              Last updated: January 2024
+            </p>
+          </div>
 
-      <section class="terms-content container">
-        <div class="terms-section">
-          <h2>Agreement to Terms</h2>
-          <p>By accessing or using Insight Research's services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.</p>
-        </div>
+          <div class="features-grid">
+            <div class="feature-card glass-card" data-animate="fade-up" data-delay="0">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 11l3 3L22 4" />
+                  <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" />
+                </svg>
+              </div>
+              <h3>Agreement to Terms</h3>
+              <p>
+                By accessing or using Insight Research's services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.
+              </p>
+            </div>
 
-        <div class="terms-section">
-          <h2>Services Description</h2>
-          <p>Insight Research provides content writing, business research, and consulting services. Specific services and deliverables will be outlined in individual project agreements or proposals.</p>
-        </div>
+            <div class="feature-card glass-card" data-animate="fade-up" data-delay="100">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                  <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" />
+                </svg>
+              </div>
+              <h3>Services Description</h3>
+              <p>
+                Insight Research provides content writing, business research, and consulting services. Specific services and deliverables are outlined in individual project agreements or proposals.
+              </p>
+            </div>
 
-        <div class="terms-section">
-          <h2>Client Responsibilities</h2>
-          <p>As a client, you agree to:</p>
-          <ul>
-            <li>Provide accurate and complete information for projects</li>
-            <li>Respond to requests for clarification or additional information in a timely manner</li>
-            <li>Review and provide feedback on drafts within agreed timelines</li>
-            <li>Pay all invoices on time according to agreed payment terms</li>
-            <li>Respect intellectual property rights of Insight Research</li>
-          </ul>
-        </div>
+            <div class="feature-card glass-card" data-animate="fade-up" data-delay="200">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                  <circle cx="8.5" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+                </svg>
+              </div>
+              <h3>Client Responsibilities</h3>
+              <p>
+                As a client, you agree to provide accurate information, respond to requests in a timely manner, review drafts within timelines, and pay invoices on time.
+              </p>
+            </div>
 
-        <div class="terms-section">
-          <h2>Payment Terms</h2>
-          <ul>
-            <li>Payment terms will be outlined in your project agreement</li>
-            <li>Standard payment terms include 50% deposit and 50% upon completion</li>
-            <li>Overdue payments may incur interest charges</li>
-            <li>All prices are in USD unless otherwise specified</li>
-            <li>We reserve the right to suspend services for overdue payments</li>
-          </ul>
-        </div>
+            <div class="feature-card glass-card" data-animate="fade-up" data-delay="300">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
+                  <line x1="1" y1="10" x2="23" y2="10" />
+                </svg>
+              </div>
+              <h3>Payment Terms</h3>
+              <p>
+                Payment terms are outlined in your project agreement. Standard terms include 50% deposit and 50% upon completion. Overdue payments may incur interest charges.
+              </p>
+            </div>
 
-        <div class="terms-section">
-          <h2>Refunds and Cancellations</h2>
-          <ul>
-            <li>Cancellations must be made in writing</li>
-            <li>Deposits are non-refundable once work has begun</li>
-            <li>Refund requests will be evaluated on a case-by-case basis</li>
-            <li>Work already completed will be charged at prorated rates</li>
-          </ul>
-        </div>
+            <div class="feature-card glass-card" data-animate="fade-up" data-delay="400">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M8 12h8" />
+                  <path d="M12 8v8" />
+                </svg>
+              </div>
+              <h3>Refunds & Cancellations</h3>
+              <p>
+                Cancellations must be made in writing. Deposits are non-refundable once work has begun. Refund requests are evaluated on a case-by-case basis.
+              </p>
+            </div>
 
-        <div class="terms-section">
-          <h2>Intellectual Property</h2>
-          <ul>
-            <li>Upon full payment, you own the final deliverables for your use</li>
-            <li>Insight Research retains the right to use work samples in our portfolio (unless confidential)</li>
-            <li>You may not use our work for resale or redistribution</li>
-            <li>Insight Research owns all pre-existing materials, templates, and methodologies</li>
-          </ul>
-        </div>
+            <div class="feature-card glass-card" data-animate="fade-up" data-delay="0">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 11l3 3L22 4" />
+                  <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" />
+                </svg>
+              </div>
+              <h3>Intellectual Property</h3>
+              <p>
+                Upon full payment, you own final deliverables for your use. We retain right to use work samples in our portfolio unless confidential. We own all pre-existing materials.
+              </p>
+            </div>
 
-        <div class="terms-section">
-          <h2>Confidentiality</h2>
-          <p>Both parties agree to maintain confidentiality of all proprietary information shared during the course of business. This obligation survives the termination of any agreement.</p>
-        </div>
+            <div class="feature-card glass-card" data-animate="fade-up" data-delay="100">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <h3>Confidentiality</h3>
+              <p>
+                Both parties agree to maintain confidentiality of all proprietary information shared during the course of business. This obligation survives the termination of any agreement.
+              </p>
+            </div>
 
-        <div class="terms-section">
-          <h2>Revisions</h2>
-          <ul>
-            <li>Standard packages include a specified number of revision rounds</li>
-            <li>Additional revisions may incur extra charges</li>
-            <li>Revisions must be requested within 14 days of delivery</li>
-            <li>Substantially new requests may be treated as new projects</li>
-          </ul>
-        </div>
+            <div class="feature-card glass-card" data-animate="fade-up" data-delay="200">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7" />
+                  <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z" />
+                </svg>
+              </div>
+              <h3>Revisions</h3>
+              <p>
+                Standard packages include a specified number of revision rounds. Additional revisions may incur extra charges. Revisions must be requested within 14 days of delivery.
+              </p>
+            </div>
 
-        <div class="terms-section">
-          <h2>Quality and Satisfaction</h2>
-          <p>We strive for excellence in all our work. If you are not satisfied with our deliverables, we will work with you through the revision process to address concerns. However, subjective preferences or changes in scope outside the original agreement may require additional fees.</p>
-        </div>
+            <div class="feature-card glass-card" data-animate="fade-up" data-delay="300">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                  <polyline points="22,4 12,14.01 9,11.01" />
+                </svg>
+              </div>
+              <h3>Quality & Satisfaction</h3>
+              <p>
+                We strive for excellence. If you're not satisfied with our deliverables, we work with you through revision process. Subjective preferences may require additional fees.
+              </p>
+            </div>
 
-        <div class="terms-section">
-          <h2>Timelines and Deadlines</h2>
-          <ul>
-            <li>Timelines are estimates based on information provided at project start</li>
-            <li>Delays caused by client feedback or information requests may extend timelines</li>
-            <li>Rush requests may incur additional charges</li>
-            <li>We are not liable for delays caused by factors beyond our control</li>
-          </ul>
-        </div>
-
-        <div class="terms-section">
-          <h2>Limitation of Liability</h2>
-          <p>Insight Research shall not be liable for any indirect, incidental, special, or consequential damages resulting from the use or inability to use our services. Our total liability is limited to the amount paid for the specific service in question.</p>
-        </div>
-
-        <div class="terms-section">
-          <h2>Indemnification</h2>
-          <p>You agree to indemnify and hold Insight Research harmless from any claims, damages, or expenses arising from your use of our services or violation of these terms.</p>
-        </div>
-
-        <div class="terms-section">
-          <h2>Termination</h2>
-          <ul>
-            <li>Either party may terminate the agreement with written notice</li>
-            <li>You will be charged for work completed up to termination</li>
-            <li>Insight Research reserves the right to refuse service at our discretion</li>
-          </ul>
-        </div>
-
-        <div class="terms-section">
-          <h2>Modifications to Terms</h2>
-          <p>We reserve the right to modify these terms at any time. Continued use of our services after changes constitutes acceptance of the updated terms.</p>
-        </div>
-
-        <div class="terms-section">
-          <h2>Governing Law</h2>
-          <p>These terms are governed by laws of the jurisdiction in which Insight Research operates. Any disputes will be resolved through binding arbitration.</p>
-        </div>
-
-        <div class="terms-section">
-          <h2>Contact Information</h2>
-          <p>For questions about these terms, please contact us at:</p>
-          <p>Email: hello@insightres.org</p>
+            <div class="feature-card glass-card" data-animate="fade-up" data-delay="400">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12,6 12,12 16,14" />
+                  <line x1="12" y1="2" x2="12" y2="22" />
+                </svg>
+              </div>
+              <h3>Timelines & Deadlines</h3>
+              <p>
+                Timelines are estimates based on information provided at project start. Delays caused by client feedback may extend timelines. Rush requests may incur additional charges.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

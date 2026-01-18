@@ -5,16 +5,78 @@ $meta_description = 'Expert guides on content writing, copywriting, research, an
 include 'header.php';
 ?>
 
-      <section class="page-header">
+      <!-- Writing Guides Section -->
+      <section class="writing-guides">
         <div class="container">
-          <h1>Writing Guides</h1>
-          <p>Expert guides on content writing, copywriting, research, and business communication</p>
-        </div>
-      </section>
+          <div class="section-header" data-animate="fade-up">
+            <span class="section-tag">Resources</span>
+            <h2>Writing <span class="gradient-text">Guides</span></h2>
+            <p>
+              Expert guides on content writing, copywriting, research, and business communication.
+            </p>
+          </div>
 
-      <section class="writing-guides-grid container">
-        <div class="container">
-          <p class="text-center">Coming soon! We're preparing comprehensive guides to help you master the art of professional writing.</p>
+          <div class="services-grid">
+            <div class="service-card glass-card" data-animate="fade-up" data-delay="0">
+              <div class="service-number">01</div>
+              <h3>Content Writing 101</h3>
+              <p>
+                Coming soon! We're preparing comprehensive guides to help you master the fundamentals of professional content writing.
+              </p>
+              <div class="service-tags">
+                <span>Writing</span>
+                <span>Fundamentals</span>
+              </div>
+            </div>
+
+            <div class="service-card glass-card" data-animate="fade-up" data-delay="100">
+              <div class="service-number">02</div>
+              <h3>Copywriting Mastery</h3>
+              <p>
+                Learn the art of persuasive copy that converts readers into customers with proven techniques and frameworks.
+              </p>
+              <div class="service-tags">
+                <span>Copywriting</span>
+                <span>Conversion</span>
+              </div>
+            </div>
+
+            <div class="service-card glass-card" data-animate="fade-up" data-delay="200">
+              <div class="service-number">03</div>
+              <h3>Research Techniques</h3>
+              <p>
+                Master primary and secondary research methodologies to create data-driven, authoritative content.
+              </p>
+              <div class="service-tags">
+                <span>Research</span>
+                <span>Data</span>
+              </div>
+            </div>
+
+            <div class="service-card glass-card" data-animate="fade-up" data-delay="300">
+              <div class="service-number">04</div>
+              <h3>SEO Content Writing</h3>
+              <p>
+                Comprehensive guide to creating SEO-optimized content that ranks well and engages your target audience.
+              </p>
+              <div class="service-tags">
+                <span>SEO</span>
+                <span>Ranking</span>
+              </div>
+            </div>
+
+            <div class="service-card glass-card" data-animate="fade-up" data-delay="400">
+              <div class="service-number">05</div>
+              <h3>B2B Communication</h3>
+              <p>
+                Expert strategies for effective B2B communication, from white papers to case studies and beyond.
+              </p>
+              <div class="service-tags">
+                <span>B2B</span>
+                <span>Professional</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

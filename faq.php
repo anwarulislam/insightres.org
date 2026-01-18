@@ -5,62 +5,149 @@ $meta_description = 'Frequently asked questions about our content writing, resea
 include 'header.php';
 ?>
 
-      <section class="page-header">
+      <!-- FAQ Section -->
+      <section class="faq">
         <div class="container">
-          <h1>Frequently Asked Questions</h1>
-          <p>Find answers to common questions about our services, process, and pricing</p>
-        </div>
-      </section>
+          <div class="section-header" data-animate="fade-up">
+            <span class="section-tag">Support</span>
+            <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+            <p>
+              Find answers to common questions about our services, process, and pricing.
+            </p>
+          </div>
 
-      <section class="faq-container container">
-        <div class="faq-item">
-          <h3>What types of content writing services do you offer?</h3>
-          <p>We provide a comprehensive range of content writing services including blog posts, articles, website content, white papers, case studies, press releases, product descriptions, and more. Each piece is crafted to meet your specific goals and target audience.</p>
-        </div>
-        
-        <div class="faq-item">
-          <h3>How does your business research service work?</h3>
-          <p>Our research services combine thorough data collection with expert analysis. We gather information from reliable sources, conduct market analysis, competitor research, and provide actionable insights tailored to your business needs. Our team has experience across various industries and research methodologies.</p>
-        </div>
-        
-        <div class="faq-item">
-          <h3>What is your typical turnaround time?</h3>
-          <p>Turnaround times vary based on project scope and complexity. Blog posts and articles typically take 3-5 business days, while larger projects like white papers or comprehensive research reports may take 1-2 weeks. We can accommodate rush requests when needed.</p>
-        </div>
-        
-        <div class="faq-item">
-          <h3>Do you offer revisions?</h3>
-          <p>Yes, we offer unlimited revisions to ensure you're completely satisfied with the final deliverable. We work closely with you throughout the process, providing drafts and incorporating your feedback until the content meets your expectations.</p>
-        </div>
-        
-        <div class="faq-item">
-          <h3>How do you ensure content quality and originality?</h3>
-          <p>Every piece of content goes through a rigorous quality assurance process. Our experienced writers craft original content based on thorough research. We use plagiarism detection tools and have editors review all work before delivery to ensure accuracy, quality, and originality.</p>
-        </div>
-        
-        <div class="faq-item">
-          <h3>Can you write content in different styles and tones?</h3>
-          <p>Absolutely. We adapt our writing style to match your brand voice and preferences. Whether you need professional and formal, conversational and friendly, or technical and authoritative content, we can deliver content that resonates with your target audience.</p>
-        </div>
-        
-        <div class="faq-item">
-          <h3>What industries do you specialize in?</h3>
-          <p>We have experience working across diverse industries including technology, healthcare, finance, education, e-commerce, SaaS, startups, and more. Our team consists of specialists with expertise in various sectors, enabling us to deliver informed and accurate content.</p>
-        </div>
-        
-        <div class="faq-item">
-          <h3>How do you handle confidential information?</h3>
-          <p>We take confidentiality very seriously. All information shared with us is treated as strictly confidential. We can sign NDAs if required, and our team follows security protocols to protect your data and intellectual property.</p>
-        </div>
-        
-        <div class="faq-item">
-          <h3>What is your pricing structure?</h3>
-          <p>Our pricing is based on project scope, word count, research requirements, and deadline. We offer transparent pricing with no hidden fees. Contact us for a free quote tailored to your specific needs, or visit our pricing page for package information.</p>
-        </div>
-        
-        <div class="faq-item">
-          <h3>Do you work with international clients?</h3>
-          <p>Yes, we work with clients worldwide. Our team is experienced in creating content for global audiences and can adapt to different cultural contexts, regional preferences, and English language variations (US, UK, etc.) as needed.</p>
+          <div class="features-grid">
+            <div class="feature-card glass-card" data-animate="fade-up" data-delay="0">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7" />
+                  <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z" />
+                </svg>
+              </div>
+              <h3>Content Writing Services</h3>
+              <p>
+                We provide a comprehensive range of content writing services including blog posts, articles, website content, white papers, case studies, press releases, and more. Each piece is crafted to meet your specific goals and target audience.
+              </p>
+            </div>
+
+            <div class="feature-card glass-card" data-animate="fade-up" data-delay="100">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8" />
+                  <path d="M21 21l-4.35-4.35" />
+                </svg>
+              </div>
+              <h3>Business Research Service</h3>
+              <p>
+                Our research services combine thorough data collection with expert analysis. We gather information from reliable sources, conduct market analysis, and provide actionable insights tailored to your business needs.
+              </p>
+            </div>
+
+            <div class="feature-card glass-card" data-animate="fade-up" data-delay="200">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3>Turnaround Time</h3>
+              <p>
+                Turnaround times vary based on project scope and complexity. Blog posts take 3-5 business days, while larger projects may take 1-2 weeks. We can accommodate rush requests when needed.
+              </p>
+            </div>
+
+            <div class="feature-card glass-card" data-animate="fade-up" data-delay="300">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7" />
+                  <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z" />
+                </svg>
+              </div>
+              <h3>Revisions Policy</h3>
+              <p>
+                Yes, we offer unlimited revisions to ensure you're completely satisfied with the final deliverable. We work closely with you throughout the process and incorporate your feedback.
+              </p>
+            </div>
+
+            <div class="feature-card glass-card" data-animate="fade-up" data-delay="400">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 12l2 2 4-4" />
+                  <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5" />
+                </svg>
+              </div>
+              <h3>Quality & Originality</h3>
+              <p>
+                Every piece of content goes through a rigorous quality assurance process. Our experienced writers craft original content based on thorough research, with plagiarism detection and editorial review.
+              </p>
+            </div>
+
+            <div class="feature-card glass-card" data-animate="fade-up" data-delay="0">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+                </svg>
+              </div>
+              <h3>Writing Styles & Tones</h3>
+              <p>
+                We adapt our writing style to match your brand voice and preferences. Whether you need professional and formal, conversational and friendly, or technical and authoritative content.
+              </p>
+            </div>
+
+            <div class="feature-card glass-card" data-animate="fade-up" data-delay="100">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <path d="M8 21h8M12 17v4" />
+                </svg>
+              </div>
+              <h3>Industry Expertise</h3>
+              <p>
+                We have experience working across diverse industries including technology, healthcare, finance, education, e-commerce, SaaS, and more. Our team has specialists in various sectors.
+              </p>
+            </div>
+
+            <div class="feature-card glass-card" data-animate="fade-up" data-delay="200">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <h3>Confidential Information</h3>
+              <p>
+                We take confidentiality very seriously. All information shared with us is treated as strictly confidential. We can sign NDAs and follow security protocols to protect your data.
+              </p>
+            </div>
+
+            <div class="feature-card glass-card" data-animate="fade-up" data-delay="300">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+              </div>
+              <h3>Pricing Structure</h3>
+              <p>
+                Our pricing is based on project scope, word count, research requirements, and deadline. We offer transparent pricing with no hidden fees. Contact us for a personalized quote.
+              </p>
+            </div>
+
+            <div class="feature-card glass-card" data-animate="fade-up" data-delay="400">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M2 12h20" />
+                  <path d="M12 2a15.3 15.3 0 014 10" />
+                  <path d="M12 2a15.3 15.3 0 01-4 10" />
+                </svg>
+              </div>
+              <h3>International Clients</h3>
+              <p>
+                Yes, we work with clients worldwide. Our team is experienced in creating content for global audiences and can adapt to different cultural contexts, regional preferences, and English variations.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

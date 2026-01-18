@@ -5,16 +5,79 @@ $meta_description = 'See how we\'ve helped businesses transform their content st
 include 'header.php';
 ?>
 
-      <section class="page-header">
+      <!-- Case Studies Section -->
+      <section class="case-studies">
         <div class="container">
-          <h1>Case Studies</h1>
-          <p>See how we've helped businesses transform their content strategy and achieve remarkable results</p>
-        </div>
-      </section>
+          <div class="section-header" data-animate="fade-up">
+            <span class="section-tag">Our Work</span>
+            <h2>Success <span class="gradient-text">Stories</span></h2>
+            <p>
+              See how we've helped businesses transform their content strategy and achieve remarkable results.
+            </p>
+          </div>
 
-      <section class="case-studies-grid container">
-        <div class="container">
-          <p class="text-center">Coming soon! We're preparing detailed case studies showcasing our successful projects and client success stories.</p>
+          <div class="services-grid">
+            <div class="service-card glass-card" data-animate="fade-up" data-delay="0">
+              <div class="service-number">01</div>
+              <h3>SaaS Company Growth</h3>
+              <p>
+                Coming soon! We're preparing detailed case studies showcasing how we helped a SaaS company increase organic traffic by 300%.
+              </p>
+              <div class="service-tags">
+                <span>SaaS</span>
+                <span>Growth</span>
+                <span>SEO</span>
+              </div>
+            </div>
+
+            <div class="service-card glass-card" data-animate="fade-up" data-delay="100">
+              <div class="service-number">02</div>
+              <h3>E-commerce Content Strategy</h3>
+              <p>
+                Learn how our comprehensive content strategy helped an e-commerce business boost conversion rates and customer engagement.
+              </p>
+              <div class="service-tags">
+                <span>E-commerce</span>
+                <span>Strategy</span>
+              </div>
+            </div>
+
+            <div class="service-card glass-card" data-animate="fade-up" data-delay="200">
+              <div class="service-number">03</div>
+              <h3>B2B Lead Generation</h3>
+              <p>
+                Discover how strategic content creation helped a B2B company generate qualified leads and establish thought leadership.
+              </p>
+              <div class="service-tags">
+                <span>B2B</span>
+                <span>Leads</span>
+              </div>
+            </div>
+
+            <div class="service-card glass-card" data-animate="fade-up" data-delay="300">
+              <div class="service-number">04</div>
+              <h3>Thought Leadership</h3>
+              <p>
+                See how we helped industry experts build their personal brand and become recognized thought leaders in their field.
+              </p>
+              <div class="service-tags">
+                <span>Brand</span>
+                <span>Authority</span>
+              </div>
+            </div>
+
+            <div class="service-card glass-card" data-animate="fade-up" data-delay="400">
+              <div class="service-number">05</div>
+              <h3>Enterprise Research</h3>
+              <p>
+                Comprehensive case study on providing deep market research and competitive analysis for Fortune 500 companies.
+              </p>
+              <div class="service-tags">
+                <span>Enterprise</span>
+                <span>Research</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
