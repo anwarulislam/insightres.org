@@ -1,7 +1,6 @@
     </main>
 
-    <?php $version = $version ?? null; ?>
- 
+    <?php include 'version.php'; ?>
     <footer class="footer">
       <div class="footer-glow"></div>
       <div class="container">
