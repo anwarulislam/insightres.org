@@ -27,12 +27,7 @@ if (!isset($_SERVER['HTTP_X_API_KEY'])) {
 
 $apiKey = $_SERVER['HTTP_X-API-KEY'];
 
-$expectedKey = getenv('UPLOAD_API_KEY');
-if (!$expectedKey) {
-    http_response_code(500);
-    echo json_encode(['error' => 'Server not configured']);
-    exit;
-}
+$expectedKey = '2c4a92a58d6f556fa64780a7657c331b656e0aed6d0bf49e89215da9c5c42aa1';
 
 if (!hash_equals($expectedKey, $apiKey)) {
     http_response_code(403);
