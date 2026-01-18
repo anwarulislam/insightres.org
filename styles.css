@@ -1371,7 +1371,7 @@ ul { list-style: none; }
     display: grid;
     grid-template-columns: 1.5fr 2.5fr;
     gap: 4rem;
-    padding-bottom: 3rem;
+    padding: 3rem 0 3rem 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     margin-bottom: 2rem;
 }
