@@ -1,5 +1,7 @@
     </main>
 
+    <?php $version = $version ?? null; ?>
+ 
     <footer class="footer">
       <div class="footer-glow"></div>
       <div class="container">
@@ -148,6 +150,6 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=<?php echo $version ?? ''; ?>"></script>
   </body>
 </html>

@@ -1693,10 +1693,43 @@ ul {
 }
 
 /* ==========================================
+   PAGE STYLES
+   ========================================== */
+
+/* Hero Section */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: calc(var(--section-padding) + 4rem) 0 var(--section-padding);
+    overflow: hidden;
+}
+
+/* Standard Sections with Header */
+.blog,
+.case-studies,
+.writing-guides,
+.faq,
+.privacy-policy,
+.terms-of-service {
+    padding: 4rem 0 var(--section-padding);
+}
+
+/* ==========================================
    RESPONSIVE DESIGN
    ========================================== */
 @media (max-width: 1024px) {
-  .about-content {
+   .blog,
+   .case-studies,
+   .writing-guides,
+   .faq,
+   .privacy-policy,
+   .terms-of-service {
+        padding: 3rem var(--section-padding);
+   }
+
+   .about-content {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
@@ -1756,6 +1789,15 @@ ul {
     visibility: hidden;
     transition: var(--transition-base);
   }
+
+  .blog,
+  .case-studies,
+  .writing-guides,
+  .faq,
+  .privacy-policy,
+  .terms-of-service {
+        padding: 2.5rem var(--section-padding);
+   }
 
   .nav-links.active {
     opacity: 1;

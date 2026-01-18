@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <?php $version = $version ?? null; ?>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><?php echo $page_title ?? 'Insight Research | Premium Content Writing & Business Consultancy'; ?></title>
@@ -18,9 +19,9 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=<?php echo $version ?? ''; ?>" />
   </head>
-  <body>
+   <body>
     <div class="bg-gradient"></div>
     <div class="bg-grid"></div>
 
