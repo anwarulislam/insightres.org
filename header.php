@@ -20,6 +20,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css?v=<?php echo $version ?? ''; ?>" />
+    <link rel="icon" type="image/png" href="images/insight-res-logo.png" />
   </head>
    <body>
     <div class="bg-gradient"></div>
@@ -28,21 +29,7 @@
     <header class="header">
       <nav class="nav container">
         <a href="index.php" class="logo">
-          <span class="logo-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path d="M12 2L2 7l10 5 10-5-10-5z" />
-              <path d="M2 17l10 5 10-5" />
-              <path d="M2 12l10 5 10-5" />
-            </svg>
-          </span>
-          <span class="logo-text"
-            >Insight<span class="logo-highlight">Research</span></span
-          >
+          <img src="images/insight-res-logo.png" alt="Insight Research Logo" class="logo-image">
         </a>
         <button class="menu-toggle" aria-label="Toggle menu">
           <span></span>

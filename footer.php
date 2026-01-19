@@ -7,21 +7,7 @@
         <div class="footer-main">
           <div class="footer-brand">
             <a href="index.php" class="logo">
-              <span class="logo-icon">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                  <path d="M2 17l10 5 10-5" />
-                  <path d="M2 12l10 5 10-5" />
-                </svg>
-              </span>
-              <span class="logo-text"
-                >Insight<span class="logo-highlight">Research</span></span
-              >
+              <img src="images/insight-res-logo.png" alt="Insight Research Logo" class="logo-image">
             </a>
             <p>
               Transforming ideas into compelling content that drives results.

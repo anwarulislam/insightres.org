@@ -393,6 +393,13 @@ ul {
   color: var(--text-primary);
 }
 
+.logo-image {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  display: block;
+}
+
 .logo-icon {
   display: flex;
   align-items: center;
