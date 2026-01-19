@@ -7,7 +7,7 @@
         <div class="footer-main">
           <div class="footer-brand">
             <a href="index.php" class="logo">
-              <img src="images/insight-res-logo.png" alt="Insight Research Logo" class="logo-image">
+              <img src="images/insight-res-logo-300x300.png" alt="Insight Research Logo" width="48" height="48" class="logo-image">
             </a>
             <p>
               Transforming ideas into compelling content that drives results.

@@ -20,7 +20,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css?v=<?php echo $version ?? ''; ?>" />
-    <link rel="icon" type="image/png" href="images/insight-res-logo.png" />
+    <link rel="icon" type="image/png" href="images/insight-res-logo-144x144.png" />
   </head>
    <body>
     <div class="bg-gradient"></div>
@@ -29,7 +29,7 @@
     <header class="header">
       <nav class="nav container">
         <a href="index.php" class="logo">
-          <img src="images/insight-res-logo.png" alt="Insight Research Logo" class="logo-image">
+          <img src="images/insight-res-logo-300x300.png" alt="Insight Research Logo" width="48" height="48" class="logo-image">
         </a>
         <button class="menu-toggle" aria-label="Toggle menu">
           <span></span>
