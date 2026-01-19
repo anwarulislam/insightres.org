@@ -4,23 +4,23 @@
 
 /* CSS Custom Properties */
 :root {
-  /* Colors - Modern gradient palette */
-  --primary-50: #eef2ff;
-  --primary-100: #e0e7ff;
-  --primary-200: #c7d2fe;
-  --primary-300: #a5b4fc;
-  --primary-400: #818cf8;
-  --primary-500: #6366f1;
-  --primary-600: #4f46e5;
-  --primary-700: #4338ca;
-  --primary-800: #3730a3;
-  --primary-900: #312e81;
+  /* Colors - Sage Green Palette */
+  --primary-50: #f0f7f2;
+  --primary-100: #e1efe4;
+  --primary-200: #c3e1c9;
+  --primary-300: #a5d3ae;
+  --primary-400: #87c593;
+  --primary-500: #72B266;
+  --primary-600: #5a9a52;
+  --primary-700: #488243;
+  --primary-800: #366a34;
+  --primary-900: #245225;
 
   /* Accent colors */
-  --accent-cyan: #06b6d4;
-  --accent-purple: #a855f7;
-  --accent-pink: #ec4899;
-  --accent-emerald: #10b981;
+  --accent-light: #BFD8B2;
+  --accent-teal: #2d936c;
+  --accent-olive: #4a7c59;
+  --accent-emerald: #3d9970;
 
   /* Neutrals */
   --gray-50: #f8fafc;
@@ -47,13 +47,13 @@
   --gradient-primary: linear-gradient(
     135deg,
     var(--primary-600) 0%,
-    var(--accent-purple) 100%
+    var(--accent-teal) 100%
   );
   --gradient-hero: linear-gradient(
     135deg,
-    #667eea 0%,
-    #764ba2 50%,
-    #f093fb 100%
+    var(--primary-500) 0%,
+    var(--accent-teal) 50%,
+    var(--accent-light) 100%
   );
   --gradient-dark: linear-gradient(
     135deg,
@@ -68,8 +68,8 @@
   --gradient-text: linear-gradient(
     135deg,
     var(--primary-500) 0%,
-    var(--accent-purple) 50%,
-    var(--accent-pink) 100%
+    var(--accent-teal) 50%,
+    var(--accent-light) 100%
   );
 
   /* Shadows */
@@ -81,8 +81,8 @@
   --shadow-xl:
     0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --shadow-glow: 0 0 40px rgba(99, 102, 241, 0.3);
-  --shadow-glow-lg: 0 0 60px rgba(99, 102, 241, 0.4);
+  --shadow-glow: 0 0 40px rgba(114, 178, 102, 0.3);
+  --shadow-glow-lg: 0 0 60px rgba(114, 178, 102, 0.4);
 
   /* Glass effect */
   --glass-bg: rgba(255, 255, 255, 0.7);
@@ -148,17 +148,17 @@ body {
   background:
     radial-gradient(
       ellipse 80% 50% at 20% -20%,
-      rgba(99, 102, 241, 0.15) 0%,
+      rgba(114, 178, 102, 0.15) 0%,
       transparent 50%
     ),
     radial-gradient(
       ellipse 60% 40% at 80% 0%,
-      rgba(168, 85, 247, 0.1) 0%,
+      rgba(45, 147, 108, 0.1) 0%,
       transparent 50%
     ),
     radial-gradient(
       ellipse 50% 30% at 10% 100%,
-      rgba(236, 72, 153, 0.08) 0%,
+      rgba(191, 216, 178, 0.08) 0%,
       transparent 50%
     );
   pointer-events: none;
@@ -172,8 +172,8 @@ body {
   right: 0;
   bottom: 0;
   background-image:
-    linear-gradient(rgba(99, 102, 241, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(99, 102, 241, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(114, 178, 102, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(114, 178, 102, 0.03) 1px, transparent 1px);
   background-size: 60px 60px;
   pointer-events: none;
   z-index: -1;
@@ -269,14 +269,14 @@ ul {
   color: white;
   box-shadow:
     var(--shadow-md),
-    0 0 0 0 rgba(99, 102, 241, 0.3);
+    0 0 0 0 rgba(114, 178, 102, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
   box-shadow:
     var(--shadow-lg),
-    0 0 30px rgba(99, 102, 241, 0.4);
+    0 0 30px rgba(114, 178, 102, 0.4);
 }
 
 .btn-primary:active {
@@ -515,7 +515,7 @@ ul {
 .hero-blob-1 {
   width: 600px;
   height: 600px;
-  background: rgba(99, 102, 241, 0.3);
+  background: rgba(114, 178, 102, 0.3);
   top: -20%;
   right: -10%;
   animation-delay: 0s;
@@ -524,7 +524,7 @@ ul {
 .hero-blob-2 {
   width: 500px;
   height: 500px;
-  background: rgba(168, 85, 247, 0.25);
+  background: rgba(45, 147, 108, 0.25);
   bottom: -10%;
   left: -10%;
   animation-delay: -5s;
@@ -533,7 +533,7 @@ ul {
 .hero-blob-3 {
   width: 400px;
   height: 400px;
-  background: rgba(236, 72, 153, 0.2);
+  background: rgba(191, 216, 178, 0.2);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1184,7 +1184,7 @@ ul {
 .cta-blob-1 {
   width: 500px;
   height: 500px;
-  background: rgba(99, 102, 241, 0.3);
+  background: rgba(114, 178, 102, 0.3);
   top: -50%;
   right: -10%;
 }
@@ -1192,7 +1192,7 @@ ul {
 .cta-blob-2 {
   width: 400px;
   height: 400px;
-  background: rgba(168, 85, 247, 0.2);
+  background: rgba(45, 147, 108, 0.2);
   bottom: -30%;
   left: -10%;
 }
@@ -1371,7 +1371,7 @@ ul {
   height: 400px;
   background: radial-gradient(
     ellipse at center,
-    rgba(99, 102, 241, 0.15) 0%,
+    rgba(114, 178, 102, 0.15) 0%,
     transparent 70%
   );
   pointer-events: none;
@@ -1449,7 +1449,7 @@ ul {
   outline: none;
   border-color: var(--primary-500);
   background: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+  box-shadow: 0 0 0 3px rgba(114, 178, 102, 0.2);
 }
 
 .newsletter-form .btn {
