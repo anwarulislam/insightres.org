@@ -3,7 +3,7 @@ header('Content-Type: application/json');
 
 $API_KEY = '2c4a92a58d6f556fa64780a7657c331b656e0aed6d0bf49e89215da9c5c42aa1';
 $MAX_SIZE = 10 * 1024 * 1024;
-$ALLOWED = ['php', 'html', 'css', 'js', 'json', 'txt', 'png', 'jpg', 'jpeg', 'gif', 'svg', 'ico', 'woff', 'woff2', 'ttf', 'eot', 'webp'];
+$ALLOWED = ['php', 'html', 'css', 'js', 'json', 'txt', 'png', 'jpg', 'jpeg', 'gif', 'svg', 'ico', 'woff', 'woff2', 'ttf', 'eot', 'webp', 'sh'];
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     echo json_encode(['status' => 'ok', 'message' => 'Ready']);
@@ -43,7 +43,29 @@ if (preg_match('/[<>:"|?*]/', $file['name'])) {
     exit;
 }
 
-if (!move_uploaded_file($file['tmp_name'], __DIR__ . '/' . $file['name'])) {
+// Extract directory path if present
+$filename = $file['name'];
+$directory = '';
+
+if (strpos($filename, '/') !== false) {
+    $pathParts = explode('/', $filename);
+    $filename = array_pop($pathParts);
+    $directory = implode('/', $pathParts);
+}
+
+// Create directory if it doesn't exist
+if ($directory && !is_dir(__DIR__ . '/' . $directory)) {
+    if (!mkdir(__DIR__ . '/' . $directory, 0755, true)) {
+        http_response_code(500);
+        echo json_encode(['error' => 'Failed to create directory']);
+        exit;
+    }
+}
+
+// Build destination path
+$destination = $directory ? __DIR__ . '/' . $directory . '/' . $filename : __DIR__ . '/' . $filename;
+
+if (!move_uploaded_file($file['tmp_name'], $destination)) {
     http_response_code(500);
     echo json_encode(['error' => 'Save failed']);
     exit;
