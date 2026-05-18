@@ -1,0 +1,10 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { loadPhpPage } from "../lib/loadPhpPage";
+
+const { currentPage, pageTitle, metaDescription, body } = loadPhpPage("blog.php");
+---
+
+<MainLayout currentPage={currentPage} pageTitle={pageTitle} metaDescription={metaDescription}>
+  <Fragment set:html={body} />
+</MainLayout>

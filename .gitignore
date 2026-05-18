@@ -1,2 +1,6 @@
 deploy.sh
 .env
+node_modules
+dist
+.wrangler
+.DS_Store
