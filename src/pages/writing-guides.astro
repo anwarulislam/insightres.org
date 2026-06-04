@@ -1,10 +1,11 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import { loadPhpPage } from "../lib/loadPhpPage";
+import { getPageMeta, loadContent } from "../lib/content";
 
-const { currentPage, pageTitle, metaDescription, body } = loadPhpPage("writing-guides.php");
+const meta = getPageMeta("writing-guides");
+const body = loadContent("writing-guides");
 ---
 
-<MainLayout currentPage={currentPage} pageTitle={pageTitle} metaDescription={metaDescription}>
+<MainLayout currentPage={meta.currentPage} pageTitle={meta.pageTitle} metaDescription={meta.metaDescription}>
   <Fragment set:html={body} />
 </MainLayout>
